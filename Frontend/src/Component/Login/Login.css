@@ -1,0 +1,113 @@
+/* General Reset */
+
+
+/* Login Page Container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e7ff; /* Light blue background */
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+}
+
+/* Form Input */
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4c8bf5; /* Blue focus */
+}
+
+/* Buttons */
+.login-button {
+  background-color: #4c8bf5;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #366ecf;
+}
+
+.signup-button {
+  background-color: #5e6dff;
+  margin-top: 15px;
+  width: auto;
+}
+
+.signup-button:hover {
+  background-color: #4a5bcf;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 14px;
+  }
+
+  .signup-button {
+    font-size: 14px;
+  }
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
